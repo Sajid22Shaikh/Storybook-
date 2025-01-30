@@ -1,5 +1,7 @@
-  import React from 'react';
+  import React, { useState } from 'react';
+// import { Heart } from "lucide-react";
   import './CarCard.css';
+import HeartList from '../c/co';
 
   const CarCard = ({
     imageUrl,
@@ -12,6 +14,8 @@
     discount,
     location,
   }) => {
+      
+    
     return (
       <div className='layout'>
       <div className='container'>
@@ -21,12 +25,16 @@
       <div className="car-card">
         <img src={imageUrl} alt={title} className="car-card-image" />
         <div className="car-card-content">
-          <h3 className="car-card-title">{title}</h3>
+          <h3 className="car-card-title">
+            {title}
+            <HeartList/>  </h3>
+          
           <p className="car-card-details">
             {distance} kms · {fuelType} · {transmission}
           </p>
           <div className="car-card-pricing">
             <span className="car-card-price">{price}</span>
+            <input type="checkbox"  />Compare
             {oldPrice && discount && (
               <span className="car-card-discount">
                 <span className="car-card-old-price">{oldPrice}</span>
@@ -43,7 +51,9 @@
         <div className="car-card">
         <img src={imageUrl} alt={title} className="car-card-image" />
         <div className="car-card-content">
-          <h3 className="car-card-title">{title}</h3>
+          <h3 className="car-card-title">
+            {title}
+           <HeartList/> </h3>
           <p className="car-card-details">
             {distance} kms · {fuelType} · {transmission}
           </p>
@@ -66,7 +76,9 @@
         <div className="car-card">
         <img src={imageUrl} alt={title} className="car-card-image" />
         <div className="car-card-content">
-          <h3 className="car-card-title">{title}</h3>
+          <h3 className="car-card-title">
+            {title}
+            <HeartList/></h3>
           <p className="car-card-details">
             {distance} kms · {fuelType} · {transmission}
           </p>
