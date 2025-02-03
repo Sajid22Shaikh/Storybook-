@@ -39,6 +39,7 @@ export const RightContent=()=>{
         { label: "Discount sales", value: -120000 },
         { label: "Total tax", value: 40000 },
       ]);
+      
     
       // Calculate total dynamically
       const total = paymentDetails.reduce((acc, item) => acc + item.value, 0);    
@@ -68,10 +69,13 @@ export const RightContent=()=>{
             <div className="sub1">
                 <h3>Customer Information <span>i</span></h3>
                 <div className="customerinf1">
-                    {/* <p>Customer name</p> */}
-                    {/* <b>Emir Abiyyu</b> */}
+                    <div className="ns"><p>Customer name</p></div>
+                    <div className="ns"><b>Emir Abiyyu</b></div>
                 </div>
-                <div className="customerinf2"></div>
+                <div className="customerinf2">
+                <div className="ns"><p>Customer name</p></div>
+                <div className="ns"><b>Emir AbiyyuB</b></div>
+                </div>
                 
             </div>
             {/* <div className="sub2"> */}
