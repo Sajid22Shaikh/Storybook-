@@ -1,7 +1,7 @@
 import React from 'react'
 import { Layout } from './resto'
 
-export default{
+export default{ 
     title:'Kanresto/resto',
     component:Layout,
 }

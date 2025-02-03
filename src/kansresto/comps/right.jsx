@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Minus, Plus, Trash2 } from 'lucide-react';
 
 export const RightContent=()=>{
+
+       
     const [orderItems, setOrderItems] = useState([
         {
           id: 1,
