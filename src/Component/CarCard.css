@@ -113,7 +113,9 @@ p {
   justify-content: space-between;
   /* background-color: #007bff; */
 }
-
+input[type="checkbox"]{
+  accent-color: orange;
+}
 .car-card-price {
   font-size: 1.1rem;
   color: #007bff;

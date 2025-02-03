@@ -1,0 +1,159 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    color: #333;
+  }
+  
+  .app-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #e65c00;
+  }
+  
+  /* Navbar
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .search-food {
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 8px 15px;
+    border-radius: 8px;
+  }
+  .search-food input {
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 16px;
+  }
+  .filter {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  /* Sidebar */
+  /* .side-bar {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 100vh;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .food-options {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .food-options:hover {
+    background: #ff6b00;
+    color: #fff;
+  } */
+   
+  /* Food Categories */
+  .food-categories {
+    display: flex;
+    flex-wrap: wrap;
+    width: 165vh;
+    /* background-color: aquamarine; */
+    gap: 15px;
+  }
+  .food-types {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 12px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+    width: 150px;
+  }
+  .food-types img{
+    width: 50px;
+  }
+  .food-types:hover {
+    background: #ff6b00;
+    color: #fff;
+  } 
+  
+  /* Popular Food Items */
+  .burger {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .burger-img img{
+    width: 200px;
+  }
+  .burger-categories {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+  }
+  .rates {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .food-order button {
+    background: #ff6b00;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .food-order button:hover {
+    background: #e65c00;
+  }
+  
+  /* Invoice Section */
+  /* .invoice {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+  } */
+  
+  /* Payment Section */
+  /* .payment {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+  }
+  .payment-logo img {
+    width: 50px;
+    margin: 10px;
+  } */
+  

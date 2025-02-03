@@ -34,7 +34,7 @@ import HeartList from '../c/co';
           </p>
           <div className="car-card-pricing">
             <span className="car-card-price">{price}</span>
-            <input type="checkbox"  />Compare
+            <div><input type="checkbox"  />Compare</div>
             {oldPrice && discount && (
               <span className="car-card-discount">
                 <span className="car-card-old-price">{oldPrice}</span>
