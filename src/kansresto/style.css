@@ -18,7 +18,7 @@ body{
 /*header*/
 .header{
     background-color: white;
-    flex:0.1;
+    flex:1;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
@@ -54,7 +54,7 @@ input[type='text']::placeholder{
 }
 .right{
     background-color: white;
-    flex:1;
+    flex:1.2;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -75,7 +75,7 @@ input[type='text']::placeholder{
 .customerinf1{
     background-color: rgb(237, 237, 237);
     border-radius: 10px;
-    flex: 0.4 ;
+    flex: auto ;
     margin-left: 10px;
     display: flex;
     flex-direction: column;
@@ -106,6 +106,9 @@ h3{
     background-color: rgb(237, 237, 237);
     border-radius: 10px;
     flex: 1;
+    margin: 0 auto;
+    padding: 20px;
+
 } */
 .sub3{
     /* background-color: aquamarine; */
