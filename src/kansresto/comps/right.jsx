@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Minus, Plus, Trash2 } from 'lucide-react';
 
 export const RightContent=()=>{
-
+    const [cuscount,setcuscounnt]=useState(0);
        
     const [orderItems, setOrderItems] = useState([
         {
@@ -69,12 +69,30 @@ export const RightContent=()=>{
             <div className="sub1">
                 <h3>Customer Information <span>i</span></h3>
                 <div className="customerinf1">
-                    <div className="ns"><p>Customer name</p></div>
-                    <div className="ns"><b>Emir Abiyyu</b></div>
+                <p>Customer name</p>
+                <b>Emir Abiyyu</b> 
+
                 </div>
                 <div className="customerinf2">
-                <div className="ns"><p>Customer name</p></div>
-                <div className="ns"><b>Emir AbiyyuB</b></div>
+                <div className="detail"><p>Customer name</p>
+                <b>Emir Abiyyu</b></div>
+                <div className="detailinf">
+                  <div className="quantity-controls">
+              <button 
+                className="quantity-btn"
+                onClick={() =>setcuscounnt(cuscount-1)}
+              >
+                <Minus size={16} />
+              </button>
+              <span>{cuscount}</span>
+              <button 
+                className="quantity-btn"
+                onClick={() => setcuscounnt(cuscount+1)}
+              >
+                <Plus size={16} />
+              </button>
+            </div>
+                </div>
                 </div>
                 
             </div>
