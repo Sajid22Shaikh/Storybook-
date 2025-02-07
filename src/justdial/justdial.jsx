@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './justdial.css'
+import ServicesSection from "./comps/services";
 export const Justdial=()=>{
     const [details,setdetails]=useState([
         {
@@ -34,11 +35,7 @@ export const Justdial=()=>{
                     ))}
                 </div>
                 <div className="details">
-                {details.map(item=>(
-                    <div className="cards">
-                        {/* <p>{item.name}</p> */}
-                    </div>
-                ))}
+                <ServicesSection/>
                 </div>
                 <div className="services">
                     {services.map(item=>(
