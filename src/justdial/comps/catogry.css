@@ -1,0 +1,40 @@
+.category-grid {
+    display:grid;
+    grid-template-columns: repeat(10, 1fr);
+    /* gap: 1rem; */
+    flex-wrap: wrap;
+    /* row-gap: 1rem; */
+    padding: 2rem;
+    /* column-gap: 3.2rem; */
+    /* justify-content: left; */
+    background-color: white;
+  }
+  
+  .category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: transform 0.1s;
+  }
+  
+  .category-item:hover {
+    transform: translateY(-2px);
+  }
+  
+  .category-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+  }
+  
+  .category-item span {
+    font-size: 0.8rem;
+    color: #444;
+  }

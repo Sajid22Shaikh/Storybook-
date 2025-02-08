@@ -34,16 +34,12 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     padding: 20px;
     gap: 10px;
 
 }
-.feat{
-    border: 1px solid rgb(227, 225, 225);
-    width: 200px;
-    height: 200px;
-}
+
 .details{
     /* background-color: blueviolet; */
     flex: 1;

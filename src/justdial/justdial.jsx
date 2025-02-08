@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './justdial.css'
 import ServicesSection from "./comps/services";
+import CategoryGrid from "./comps/catogory";
 export const Justdial=()=>{
     const [details,setdetails]=useState([
         {
@@ -30,9 +31,7 @@ export const Justdial=()=>{
             <div className="head"></div>
             <div className="main">
                 <div className="features">
-                    {features.map(item=>(
-                        <div className="feat"></div>
-                    ))}
+                    <CategoryGrid/>
                 </div>
                 <div className="details">
                 <ServicesSection/>
