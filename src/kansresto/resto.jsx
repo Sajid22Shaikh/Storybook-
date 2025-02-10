@@ -4,6 +4,9 @@ import './sty2.css'
 import { Header } from "./comps/header";
 import { LeftContent } from "./comps/left";
 import { RightContent } from "./comps/right";
+import { Aside } from "./comps/Aside";
+import '../kansresto/comps/aside.css';
+
 export const Layout=()=>{
     return(
         <div className="container">
@@ -13,6 +16,7 @@ export const Layout=()=>{
             <div className="main-content">
             <div className="left">
                 <LeftContent/>
+                {/* <Aside/> */}
             </div>
             <div className="right">
                 <RightContent/>
