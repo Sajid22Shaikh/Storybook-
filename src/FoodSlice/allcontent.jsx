@@ -6,6 +6,7 @@ import { PopularFoods } from "./component/poularfood";
 import { Invoice } from "./component/invoice";
 import { Payment } from "./component/payment";
 import './style.css'
+import { ProductList } from "./component/Catogoriesbolt";
 
 export const App = () => {
   return (
@@ -15,7 +16,9 @@ export const App = () => {
         {/* <Sidebar /> */}
         <div className="main-content">
           <FoodCategories/>
-          <PopularFoods/>
+          {/* <PopularFoods/> */}
+          <div className="prolist">
+          <ProductList/></div>
         </div>
         {/* <div className="right-panel">
           <Invoice/>
