@@ -1,0 +1,40 @@
+
+
+/* Global responsive layout */
+.checkout-container {
+  padding: 1rem;
+  max-width: 1440px;
+  /* margin: 0 auto; */
+}
+
+.checkout-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Media query for tablet and above */
+@media (min-width: 768px) {
+  .checkout-container {
+    padding: 2rem;
+  }
+}
+
+/* Media query for desktop */
+@media (min-width: 1024px) {
+  .checkout-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .checkout-content > * {
+    flex: 1;
+  }
+}
+
+/* Media query for large desktop */
+@media (min-width: 1280px) {
+  .checkout-container {
+    padding: 3rem;
+  }
+}

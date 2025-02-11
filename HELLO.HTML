@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .con{
+            background-color: aqua;
+            display: flex;
+            width: 1000px;
+            height: 50vh;
+            gap: 12px;
+            flex-direction: column;
+            margin: 20px;
+            scrollbar-width: thin;
+            overflow-y: auto;
+    scrollbar-color: #888 #f1f1f1;
+        }
+        .con::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .con::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  .con::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+        .hs{
+            flex: 1;
+            /* aspect-ratio: 20/1; */
+            /* width: 300px; */
+            /* height: 200px; */
+            background-color: yellowgreen;
+            border-radius: 12px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <div class="hs"></div>
+        <div class="hs"></div>
+        <div class="hs"></div>
+        <div class="hs"></div>
+        <div class="hs"></div>
+        <div class="hs"></div>
+        <div class="hs"></div>
+        <div class="hs"></div>
+        <div class="hs"></div>
+
+    </div>
+</body>
+</html>
