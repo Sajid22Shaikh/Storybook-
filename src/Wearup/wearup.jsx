@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './components/Header/Header';
 import OrderSummary from './components/OrderSummary/OrderSummary';
 import PaymentDetails from './components/PaymentDetails/PaymentDetails';
-import './wearup.css'
+// import './wearup.css'
 
 export const Layout=()=> {
   return (
