@@ -1,0 +1,41 @@
+.header {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.steps {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-size: 14px;
+}
+
+.step::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 8px;
+  background: #eee;
+}
+
+.step.active {
+  color: #000;
+}
+
+.step.active::before {
+  background: #22c55e;
+}
