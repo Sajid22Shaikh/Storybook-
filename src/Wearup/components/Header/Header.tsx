@@ -5,12 +5,15 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo">Wearup.</div>
-      <div className="steps">
+      <nav className="checkout-steps">
         <div className="step">Order Overview</div>
-        <div className="step active">Information</div>
+        <div className="step active">
+          <span className="check-icon">✓</span>
+          Information
+        </div>
         <div className="step">Payment Details</div>
         <div className="step">Complete Order</div>
-      </div>
+      </nav>
     </header>
   );
 };

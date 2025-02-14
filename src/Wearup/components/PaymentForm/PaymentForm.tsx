@@ -1,21 +1,22 @@
 import React from 'react';
-import './PaymentDetails.css';
+import './PaymentForm.css';
 
-const PaymentDetails = () => {
+const PaymentForm = () => {
   return (
-    <div className="payment-details">
+    <div className="payment-form">
       <h2>Payment Details</h2>
-      <p className="payment-subtitle">Complete your purchase item by providing your payment details order.</p>
+      <p className="subtitle">Complete your purchase item by providing your payment details order.</p>
 
-      <form className="payment-form">
+      <form>
         <div className="form-group">
           <label>Email Address</label>
-          <div className="input-with-icon">
+          <div className="input-container">
             <input 
               type="email" 
               defaultValue="barlyvallendit@gmail.com" 
               className="verified"
             />
+            <span className="check-icon">✓</span>
           </div>
         </div>
 
@@ -30,30 +31,35 @@ const PaymentDetails = () => {
 
         <div className="form-group">
           <label>Card Holder</label>
-          <input type="text" defaultValue="Barly Vallendito" />
+          <input type="text" defaultValue="Barly Vallendi" />
         </div>
 
         <div className="form-group">
           <label>Billing Address</label>
-          <div className="input-with-icon verified">
-            <input type="text" defaultValue="7861 Garfield Ave, Huntington Beach" />
+          <div className="input-container">
+            <input 
+              type="text" 
+              defaultValue="7851 Garfield Ave, Huntington Beach" 
+              className="verified"
+            />
+            <span className="check-icon">✓</span>
           </div>
           <input type="text" defaultValue="California(CA)" />
           <input type="text" defaultValue="92648" />
         </div>
 
-        <div className="order-total">
-          <div className="subtotal">
+        <div className="summary">
+          <div className="summary-row">
             <span>Subtotal</span>
-            <span>$397.00</span>
+            <span>$ 397.00</span>
           </div>
-          <div className="vat">
+          <div className="summary-row">
             <span>Vat (20%)</span>
-            <span>$2.89</span>
+            <span>$ 2.89</span>
           </div>
-          <div className="total">
+          <div className="summary-row total">
             <span>Total</span>
-            <span>$399.89</span>
+            <span>$ 399.89</span>
           </div>
         </div>
 
@@ -65,4 +71,4 @@ const PaymentDetails = () => {
   );
 };
 
-export default PaymentDetails;
+export default PaymentForm;

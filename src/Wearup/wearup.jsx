@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './components/Header';
-import OrderSummary from './components/OrderSummary';
-import PaymentDetails from './components/PaymentDetails';
+import Header from './components/Header/Header';
+import OrderSummary from './components/OrderSummary/OrderSummary';
+import PaymentForm from './components/PaymentForm/PaymentForm';
 import './wearup.css';
 
 export const Layout=()=> {
@@ -10,7 +10,7 @@ export const Layout=()=> {
       <Header />
       <main className="main-content">
         <OrderSummary />
-        <PaymentDetails />
+        <PaymentForm />
       </main>
     </div>
   );
