@@ -15,7 +15,7 @@
   
   /* Add smooth scrolling to the page */
   html {
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth;  */
   }
   
   /* Improve button and input styling on iOS */
