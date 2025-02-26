@@ -38,7 +38,7 @@
 }
 .pque{
     flex:1;
-    background-color: wheat;
+    /* background-color: wheat; */
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -54,14 +54,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     flex: .1;
 }
 .pcatogories{
     flex: .5;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 .plist{
     flex: 3;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
