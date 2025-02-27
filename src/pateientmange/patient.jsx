@@ -2,6 +2,11 @@ import React from "react";
 import { Search } from 'lucide-react';
 
 import './patient.css'
+const pcatogoriey=[
+    {catogory:'All'},
+    {catogory:'Newest'},
+    {catogory:'Oldest'}
+]
 export const Patient=()=>{
     return(
         <>
@@ -15,7 +20,13 @@ export const Patient=()=>{
                             <h2>Patient Queue</h2>
                             <Search/>
                         </div>
-                        <div className="pcatogories"></div>
+                        <div className="pcatogories">
+                            
+                                {pcatogoriey.map((items=>
+                                    <div className="subcat"><b>{items.catogory}</b></div>
+                                ))}
+                            
+                        </div>
                         <div className="plist"></div>
                     </div>
                     <div className="pdetail"></div>
