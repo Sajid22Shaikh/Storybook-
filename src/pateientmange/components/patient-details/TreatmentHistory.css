@@ -1,0 +1,84 @@
+.treatment-history {
+  flex: 2;
+}
+
+.treatment-table-container {
+  overflow-x: auto;
+}
+
+.treatment-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.treatment-table th {
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #6b7280;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.treatment-table td {
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.treatment-id {
+  font-family: monospace;
+  color: #6b7280;
+}
+
+.treatment-type {
+  display: flex;
+  align-items: center;
+}
+
+.treatment-icon {
+  display: inline-flex;
+  margin-right: 0.5rem;
+}
+
+.treatment-result {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #10b981;
+}
+
+.payment-status {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.payment-status.pending {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+.payment-status.paid {
+  background-color: #d1fae5;
+  color: #059669;
+}
+
+.more-button {
+  background: none;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.more-button:hover {
+  background-color: #f3f4f6;
+  color: #4b5563;
+}

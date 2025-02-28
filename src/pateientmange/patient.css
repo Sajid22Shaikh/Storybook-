@@ -1,82 +1,151 @@
-*{
-    padding: 0;
+/* Base styles */
+* {
     margin: 0;
-    font-family: sans-serif;
-}
-
-.pcontainer{
-    width: 100%;
-    height: 100vh;
-    /* background-color: aqua; */
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: #111827;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  /* Global utility classes that were previously provided by Tailwind */
+  .min-h-screen {
+    min-height: 100vh;
+  }
+  
+  .bg-gray-100 {
+    background-color: #f3f4f6;
+  }
+  
+  .flex {
     display: flex;
-    flex-direction: column;
-    /* border: 1px solid grey; */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    /* border-radius: 5px; */
-}
-.pheader{
-    flex: .5;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .bg-white {
     background-color: white;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-    position: relative;
-}
-.pcontent{
-    flex: 4;
-    background-color:rgb(241, 236, 236) ;
+  }
+  
+  .p-8 {
+    padding: 2rem;
+  }
+  
+  .rounded-lg {
+    border-radius: 0.5rem;
+  }
+  
+  .shadow-md {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+.app-container {
     display: flex;
-}
-.psidebar{
-    flex: .2;
-    background-color: white;
-}
-.pmain{
-    flex: 4;
-    display: flex;
-    margin: 20px;
-    gap: 15px;
-    margin-top: 30px;
-}
-.pque{
-    flex:1;
-    /* background-color: wheat; */
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-.pdetail{
-    flex: 3;
-    background-color: white;
-    border-radius: 10px;
-    border: 2px solid
-     rgb(196, 193, 193);
-}
-.psearch{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    /* background-color: aliceblue; */
-    flex: .1;
-}
-.pcatogories{
-    flex: .5;
-    display: flex;
-    border-radius: 10px;
-    /* background-color: aquamarine; */
-}
-.subcat{
+    min-height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .main-content {
     flex: 1;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .top-header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    border-radius: 10px;
-    background-color: rgb(206, 207, 209);
-}
-.subcat:hover{
+    padding: 1rem 1.5rem;
     background-color: white;
-    
-}
-.plist{
-    flex: 3;
-    /* background-color: yellow; */
-}
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  .separator {
+    color: #9ca3af;
+  }
+  
+  .current {
+    font-weight: 500;
+  }
+  
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .search-button, .notification-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #6b7280;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 0.375rem;
+  }
+  
+  .search-button:hover, .notification-button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .user-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  
+  .avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .user-name {
+    font-weight: 500;
+    font-size: 0.875rem;
+  }
+  
+  .user-role {
+    font-size: 0.75rem;
+    color: #6b7280;
+  }
+  
+  .content-area {
+    display: flex;
+    flex: 1;
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  @media (max-width: 1024px) {
+    .content-area {
+      flex-direction: column;
+    }
+  }
