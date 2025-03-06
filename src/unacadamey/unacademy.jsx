@@ -14,7 +14,7 @@ export const Home=()=> {
     salary: "Not Disclosed",
     location: "Bengaluru",
     posted: "17 days ago",
-    openings: 2,
+    openings: 4,
     applicants: 884,
     description: "Unacademy - Bangalore\nPosition: Senior Finance Executive Revenue\n\nJob Description\n• Conduct a three-way revenue reconciliation (Revenue to Record).",
     skills: ["Ca", "Revenue Reconciliation", "Gst Filing", "Gst", "Revenue Recognition"]
