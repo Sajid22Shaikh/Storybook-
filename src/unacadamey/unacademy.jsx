@@ -26,7 +26,7 @@ export const Home=()=> {
       experience: "1-5 Yrs",
       location: "Bengaluru(Domlur)",
       posted: "Posted 19 days ago",
-      logo: "/company-logo.png"
+      logo: "unacademy.png"
     },
     {
       title: "Sales Manager/ Senior Sales Manager",
