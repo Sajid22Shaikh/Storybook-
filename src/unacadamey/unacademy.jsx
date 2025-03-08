@@ -2,6 +2,7 @@ import React from 'react';
 import JobCard from './components/JobCard';
 import SimilarJobs from './components/SimilarJobs';
 import ReviewSection from './components/ReviewSection';
+import Logo from './images/unacademy.png'
 import './unacademey.css';
 
 export const Home=()=> {
@@ -25,22 +26,22 @@ export const Home=()=> {
       title: "Korean Educator",
       experience: "1-5 Yrs",
       location: "Bengaluru(Domlur)",
-      posted: "Posted 19 days ago",
-      logo: "unacademy.png"
+      posted: "Posted 19 days ago", 
+      logo: Logo
     },
     {
       title: "Sales Manager/ Senior Sales Manager",
       experience: "2-5 Yrs",
       location: "Delhi / NCR(Noida-Greater Noida...)",
       posted: "Posted 24 days ago",
-      logo: "/company-logo.png"
+      logo: Logo
     },
     {
       title: "Business Development Manager",
       experience: "3-5 Yrs",
       location: "Varanasi",
       posted: "Posted 30 days ago",
-      logo: "/company-logo.png"
+      logo: Logo
     }
   ];
 

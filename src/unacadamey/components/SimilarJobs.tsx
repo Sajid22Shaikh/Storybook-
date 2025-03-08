@@ -37,7 +37,9 @@ const SimilarJobs: React.FC<SimilarJobsProps> = ({ title, jobs }) => {
               <div className="job-posted">{job.posted}</div>
             </div>
             <div className="company-logo">
-              <div className="logo-placeholder"></div>
+              <div className="logo-placeholder">
+                <img src={job.logo} alt=""/>
+              </div>
             </div>
           </div>
         ))}

@@ -76,7 +76,17 @@
   width: 40px;
   height: 40px;
   background: linear-gradient(135deg, #4285f4, #34a853);
+  backdrop-filter:;
   border-radius: 4px;
+  display: flex;
+ 
+  align-items: center;
+  justify-content: center;
+}
+img{
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
 }
 
 @media (max-width: 600px) {
