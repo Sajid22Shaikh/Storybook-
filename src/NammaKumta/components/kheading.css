@@ -1,0 +1,13 @@
+.kheading{
+    flex: .3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input[type="text"]{
+    max-width: 1200px;
+}
+.kmain{
+    flex:2;
+}
